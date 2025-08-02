@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 border-b">
+    <div class="text-xl font-bold">😊 My Website</div>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Our Profile</a>
+      <a href="#message-us" class="hover:underline">Message Us</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="text-center py-16">
+    <h1 class="text-3xl font-semibold">Hi, Welcome To Website</h1>
+    <p class="mt-2 text-gray-500">Ini adalah website utama portofolio</p>
+    <div class="mt-8 h-48 bg-gray-200" style="background-image: url(https://picsum.photos/200/300);">
+
+    </div>
+  </section>
+
+  <!-- Headquarters -->
+  <section class="py-12 border-t border-b text-center">
+    <h2 class="text-2xl font-semibold mb-6">Our Profile</h2>
+    <div class="flex justify-center gap-10">
+      <div>
+        <div class="w-24 h-24 rounded-full border mx-auto mb-2"></div>
+        <p>Saya <b>Alfin Nur Efendi</b>, seorang mahasiswa dari Universitas Gunadarma
+        <br>Saya Memilih kelas dari <b>RevoU</b> karena tertarik untuk mempelajari software engineering</p>
+      </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message-us" class="py-12 px-6">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Message Us</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+
+      <!-- Form -->
+      <form id="contactForm" class="space-y-4">
+        <div>
+          <label class="block mb-1">Name</label>
+          <input type="text" id="name" class="w-full border px-3 py-2 rounded" required />
+        </div>
+        <div>
+          <label class="block mb-1">Date of Birth</label>
+          <input type="date" id="dob" class="w-full border px-3 py-2 rounded" required />
+        </div>
+        <div>
+          <label class="block mb-1">Gender</label>
+          <select id="gender" class="w-full border px-3 py-2 rounded" required>
+            <option value="">-- Choose --</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1">Pesan</label>
+          <textarea id="message" rows="3" class="w-full border px-3 py-2 rounded" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+      </form>
+
+      <!-- Output -->
+      <div id="output" class="border p-4 rounded bg-gray-50">
+        <p class="text-sm text-gray-600 mb-2">Current time: <span id="currentTime"></span></p>
+        <hr class="mb-2">
+        <p><strong>Nama:</strong> <span id="outName">-</span></p>
+        <p><strong>Tanggal Lahir:</strong> <span id="outDob">-</span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="outGender">-</span></p>
+        <p><strong>Pesan:</strong> <span id="outMessage">-</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 border-t text-sm text-gray-500">
+    Alfin Nur Efendi
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
